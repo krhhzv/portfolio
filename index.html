@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krhhzv Mukherjee</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background:#f5f2ea;
+  font-family:'Patrick Hand', cursive;
+  color:#111;
+  padding-bottom:70px;
+}
+
+.wrapper{
+  max-width:1100px;
+  margin:auto;
+}
+
+/* HEADER */
+.header{
+  padding:30px 20px;
+  border-bottom:2px dashed #111;
+}
+
+.name{font-size:28px}
+
+.tag{
+  font-size:15px;
+  opacity:0.75;
+  line-height:1.5;
+  margin-top:6px;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:14px;
+  display:inline-block;
+  padding:10px 14px;
+  border:2px solid #111;
+  border-radius:10px;
+  background:#facc15;
+  cursor:pointer;
+}
+
+.btn:active{
+  transform:scale(0.96);
+}
+
+/* SECTION */
+.section{
+  padding:24px 16px;
+}
+
+.title{
+  font-size:22px;
+  margin-bottom:12px;
+  position:relative;
+}
+
+.title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:60%;
+  height:3px;
+  background:#111;
+}
+
+/* STORY */
+.story{
+  display:grid;
+  gap:20px;
+}
+
+.story-card{
+  background:white;
+  border:2px solid #111;
+  border-radius:14px;
+  padding:16px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.story-card.highlight{
+  background:#facc15;
+}
+
+.story-card.bold{
+  font-size:18px;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border:2px solid #111;
+  border-radius:14px;
+  padding:18px;
+  box-shadow:6px 6px 0 #111;
+  cursor:pointer;
+  min-height:44px;
+}
+
+.card:active{
+  transform:scale(0.97);
+  box-shadow:2px 2px 0 #111;
+}
+
+.card-title{font-size:20px}
+
+.card-desc{
+  font-size:14px;
+  opacity:0.75;
+  margin-top:8px;
+  line-height:1.4;
+}
+
+.label{
+  margin-top:10px;
+  font-size:12px;
+  background:#facc15;
+  display:inline-block;
+  padding:2px 6px;
+  border-radius:6px;
+}
+
+/* CONTACT */
+.contact{
+  display:grid;
+  gap:20px;
+}
+
+.contact-card{
+  background:white;
+  border:2px solid #111;
+  border-radius:14px;
+  padding:16px;
+  box-shadow:6px 6px 0 #111;
+}
+
+.contact-card.highlight{
+  background:#facc15;
+}
+
+.contact-btn{
+  margin-top:10px;
+  padding:10px 14px;
+  border:2px solid #111;
+  border-radius:8px;
+  background:white;
+  cursor:pointer;
+  min-height:44px;
+}
+
+.contact-btn:active{
+  transform:scale(0.96);
+}
+
+/* MOBILE CTA */
+.mobile-cta{
+  position:fixed;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  max-width:500px;
+
+  background:#facc15;
+  border:2px solid #111;
+  border-radius:14px;
+
+  padding:14px;
+  text-align:center;
+  font-size:16px;
+
+  box-shadow:6px 6px 0 #111;
+  z-index:999;
+}
+
+@media(min-width:768px){
+  .projects{grid-template-columns:repeat(2,1fr);}
+  .mobile-cta{display:none;}
+}
+
+@media(min-width:1100px){
+  .projects{grid-template-columns:repeat(3,1fr);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="name">Krhhzv Mukherjee</div>
+
+  <div class="tag">
+    i design and build functional web products.<br>
+    + help creators grow through marketing.<br><br>
+    worked with creators • closed deals • ran campaigns
+  </div>
+
+  <div class="btn" onclick="go('marketing.html')">
+    marketing work →
+  </div>
+</div>
+
+<!-- STORY -->
+<div class="section">
+  <div class="title">story</div>
+
+  <div class="story">
+
+    <div class="story-card">
+      march 2025. randomly started writing scripts for a finance youtuber.
+    </div>
+
+    <div class="story-card">
+      then somehow ended up managing the whole thing.
+    </div>
+
+    <div class="story-card highlight">
+      got into influencer deals. didn’t even plan it tbh.
+    </div>
+
+    <div class="story-card">
+      worked with another creator in tech / growth niche.
+    </div>
+
+    <div class="story-card">
+      connected with a marketing lead. did some real work there.
+    </div>
+
+    <div class="story-card">
+      helped run a small ugc campaign. more like an experiment.
+    </div>
+
+    <div class="story-card">
+      right now just sourcing creators. outreach. figuring things out.
+    </div>
+
+    <div class="story-card">
+      started coding like a month ago. mostly vibe coding.
+    </div>
+
+    <div class="story-card">
+      but design — i do that myself. that part i actually care about.
+    </div>
+
+    <div class="story-card">
+      not consistent. but still building.
+    </div>
+
+    <div class="story-card bold">
+      16 rn. turning 17 soon.
+    </div>
+
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+  <div class="title">projects</div>
+
+  <div class="projects">
+
+    <div class="card" onclick="go('https://krhhzv.github.io/studii/')">
+      <div class="card-title">studii</div>
+      <div class="card-desc">
+        focus system to stay consistent and eliminate distractions
+      </div>
+      <div class="label">best work</div>
+    </div>
+
+    <div class="card" onclick="go('https://krhhzv.github.io/Kagaaz/')">
+      <div class="card-title">Kagaaz</div>
+      <div class="card-desc">
+        generate invoices instantly with export-ready pdf
+      </div>
+    </div>
+
+    <div class="card" onclick="go('https://krhhzv.github.io/phool./')">
+      <div class="card-title">Phool</div>
+      <div class="card-desc">
+        send interactive digital letters through shareable links
+      </div>
+    </div>
+
+    <div class="card" onclick="go('https://krhhzv.github.io/Analyzer/')">
+      <div class="card-title">Analyzer</div>
+      <div class="card-desc">
+        experimental interactive tool exploring user behavior
+      </div>
+    </div>
+
+    <div class="card" onclick="go('https://krhhzv.github.io/Numi/')">
+      <div class="card-title">Numi</div>
+      <div class="card-desc">
+        fast minimal calculator for everyday quick use
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <div class="title">let’s work.</div>
+
+  <div style="font-size:14px;opacity:0.7;margin-bottom:10px;">
+    got an idea, project or collab? reach out.
+  </div>
+
+  <div class="contact">
+
+    <div class="contact-card">
+      email  
+      <div class="contact-btn" onclick="emailPrimary()">write →</div>
+      <div class="contact-btn" onclick="emailAlt()">or outlook →</div>
+    </div>
+
+    <div class="contact-card highlight">
+      whatsapp  
+      <div class="contact-btn" onclick="whatsapp()">let’s work →</div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<!-- MOBILE CTA -->
+<div class="mobile-cta" onclick="whatsapp()">
+  let’s work →
+</div>
+
+<script>
+function go(url){
+  window.open(url,'_blank');
+}
+
+function emailPrimary(){
+  window.location.href="mailto:krhhzv@gmail.com";
+}
+
+function emailAlt(){
+  window.location.href="mailto:krhhzv@outlook.com";
+}
+
+function whatsapp(){
+  window.open(
+    "https://wa.me/918509566463?text=hey%20saw%20your%20portfolio.%20i%20wanna%20work%20with%20you.",
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
